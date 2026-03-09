@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+ul li a {
+    margin:  10px;
+    color: white;
+}
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 20px;
+    height: 70px;
+ }
+.img-defult{
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.img-scrolled{
+    position: absolute;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+nav.scrolled{
+    background-color: rgba(0, 0, 0, 0.705);
+    transition: 0.5s;
+}
+nav.scrolled a{
+    color: rgb(255, 255, 255);
+}
+nav.scrolled .img-default {
+    opacity: 0;
+}
+nav.scrolled .img-scrolled {
+    opacity: 1;
+}
+.section1{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0,0.6),rgba(0, 0, 0, 0.6)), url(./images/home_bg.jpeg);
+    height: 75vh;
+    background-size: cover;
+    flex-direction: column;;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+}
+.title1 h1{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: bold;
+}
+.title1 p{
+    color: white;
+}
+.title1 h1 span{
+    color: rgb(156, 109, 5);
+}
+.btn{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 20px ;
+    margin-top: 20px;
+    color: white;
+}
+.title1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+}
+.title2{
+    text-align: center;
+    scroll-margin-top: 90px ;
+}
+.title2 h1{
+    margin-bottom: 20px;
+    margin-top: 20PX;
+
+}
+.title2 p{
+    color: rgba(0, 0, 0, 0.418);
+    margin-bottom: 50px;
+}
+.section2{
+    display: flex;
+    padding: 20px;
+}
+.main2{
+    margin-top: 30px;
+    margin-right: 40px;
+}  
+.btn2{
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.main2 p{
+    margin-bottom: 25px;
+    color:  rgba(0, 0, 0, 0.493);
+}
+.section3{
+    background-image: url(./images/offer-background.jpg);
+    background-size: cover;
+    background-repeat:no-repeat ;
+    padding: 20px;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.all3{
+    overflow: hidden;
+}
+.title3{
+    text-align: center;
+}
+.title3 h1{
+    color: rgb(156, 109, 5);
+    margin: 20px;
+}
+.title3 p{
+    color: white;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+.card h2{
+    margin: 20px;
+}
+.card p{
+    margin-bottom: 20px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100%;
+    color: white;
+}
+.price span{
+    color: gray;
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+.price{
+    color: rgb(156, 109, 5);
+}
+.next{
+    position: absolute;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 30px;
+    border: none;
+    top: 48%;
+
+}
+.prev{
+    position: absolute;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 30px;
+    border: none;
+    top: 48%;
+}
+.title4{
+    text-align: center;
+    margin-top: 30px;
+    scroll-margin-top: 100px ;
+
+}
+.title4 p{
+    margin-top: 20px;
+    color: #0000008f;
+}
+.menu-item{
+    display: flex;
+    margin-bottom: 40px;
+}
+.item-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    width: 400px;
+}
+.food{
+    display: flex;
+    flex-direction: column;
+}
+.menu-item img{
+    height: 80px;
+    width: 80px;
+}
+.item-main{
+    margin-left: 25px;
+    width: 400px;
+    color: rgba(0, 0, 0, 0.699);
+
+}
+.item-title h1{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.801);
+}
+.item-title span{
+    color: rgb(155, 108, 6);
+}
+.all-menu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.btn4{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.btn4 button{
+    border: 2px solid  rgb(156, 109, 5) ;
+    background-color: rgb(156, 109, 5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+
+@media (max-width:800px ){
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title1 h1{
+        font-size: 20px;
+
+    }
+    .section2{
+        flex-direction: column;
+    }
+    .main2{
+        flex-direction: column;
+    }
+    .section2 img{
+        display: none;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .all-menu{
+        flex-direction: column;
+    }
+    .lift-side{
+        width: 100%;
+    }
+    .menu-item{
+        width: 100%;
+    }
+    .item-main{
+        width: auto;
+    }
+    .item-title{
+        width: auto;
+    }
+    .section5{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .section7{
+        flex-direction: column;
+    }
+    
+}
+.section5{
+    display: flex;
+    background-image: url(./daytime_bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.item img{
+    width: 80px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+.item h2{
+    margin-bottom: 5px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section5 .item{
+padding: 30px;
+}
+
+/* section 5 */
+
+.section6{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./offer-background.jpg);
+    padding: 20px;
+    scroll-margin-top: 70px ;
+}
+.up{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    width: 60%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.up img{
+    width: 230px;
+    height: 180px;
+    border-radius: 10px;
+}
+.section6 h1 {
+    text-align: center;
+    margin-bottom: 80px;
+    color: white;
+}
+    /* section 6 */
+.boxmodel{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(50px);
+}
+.controls img{
+    object-fit: cover;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 200px;
+    z-index: 5000;   
+}
+.controls{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.next2{
+    position: absolute;
+    top: 48%;
+    left: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    padding: 20px 30px;
+}
+.prev2{
+    position: absolute;
+    top: 48%;
+    right: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    padding: 20px 30px;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    padding: 10px 15px;
+    color: red;
+}
+.all-menu img{
+    border-radius: 50%;
+}
+button{
+    cursor: pointer;
+}
+
+
+
+.section7{
+    display: flex;
+    align-items: center;
+}
+.form7{
+    margin-left: 150px;
+    display: flex; 
+    flex-direction: column;
+    
+}
+.lift7{
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;;
+}
+.form7 input{
+    width: 500px;
+    height: 30px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgba(128, 128, 128, 0.288);
+}
+.form7 textarea{
+    width: 500px;
+    height: 100px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgba(128, 128, 128, 0.288);
+}
+.form7 button{
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(226, 173, 75);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 25px;
+}
+.adress h2{
+    margin-bottom: 20px;
+}
+.adress p{
+    margin-bottom: 20px;
+}
+.work h2{
+    margin-bottom: 20px;
+}
+.work p{
+    margin-bottom: 20px;
+}
+form p{
+    color: red;
+}
